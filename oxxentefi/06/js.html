@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        function minhafuncao(arg1, arg2) {
+
+            var soma = arg1 + arg2
+            var msg = 'a soma é igual a: '
+            alert(msg + soma);
+        }
+        function escreve(arg) {
+            document.write(arg)
+        }
+        function carregarimg1() {
+            alert('n sei pra onde isso vai')
+            document.getElementById('img').setAttribute("src", "https://rc24h.com.br/wp-content/uploads/2021/08/show_flor_de_liz_24585172-B3AE-4575-9A3E-A8E55FB2A817.jpg")
+            document.getElementById("mudar-imagem").setAttribute("onclick", "carregarimg2()")
+        }
+        function carregarimg2() {
+            alert('ainda n sei fi')
+            document.getElementById('img').setAttribute("src", "")
+            document.getElementById("mudar-imagem").setAttribute("onclick", "carregarimg1()")
+        }
+    </script>
+</head>
+<body>
+
+    <H1>todas as coisas q eu amo ne 😜😜</H1>
+    <button onclick="minhafuncao(190,390)"> clique</button>
+    <button onclick="escreve('<h1>AMO A ALICE DEMAIS</h1>')"> escreve</button>
+    <button id="mudar-imagem" onclick="carregarimg1()">trocar imagem</button>
+    <div id="phonsy">
+        <img id="img"
+            src="https://monkeybuzz.com.br/wp-content/uploads/2018/02/mac-demarco-lolla-5a8f3cf52cdd2.jpg"
+            alt="amo a alice">
+    </div>
+
+</body>
+
+</html>
